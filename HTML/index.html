@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="../CSS/reset.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+</head>
+<body>
+    <div id="vuejs">
+        <div class="frame">
+            <div class="top">
+                <span>To Do List</span>
+            </div>
+            <div class="list" >
+                <div v-bind:class={board:isPop}></div>
+                <div class="new" v-on:click="add()">+</div>
+                <div v-for="(item, index) in items">
+                    <div class="record" v-on:click="renew(index)" v-on:mouseenter="over()" v-on:mouseleave="leave()">
+                        {{item.text}}
+                        <div v-if="isOver" class="delete" v-on:click.stop="remove(index)" >
+                            <img src="..\IMG\close.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div v-if="isPop" class="card">
+                <div class="top">
+                    <div class="info">
+                        <span>{{info}}</span>
+                    </div>
+                    <div class="close" v-on:click="close">关闭</div>
+                </div>
+                <div>
+                    <input type="text" v-model="message"> 
+                </div>
+                <div class="save">
+                    <div class="button" v-on:click="save()">保存</div>
+                </div>
+            </div>
+        </div>        
+    </div> 
+    <script src="../js/vue.js"></script>
+    <script src="../js/todo.js"></script>
+</body>
+</html>

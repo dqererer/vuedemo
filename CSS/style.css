@@ -1,0 +1,112 @@
+.clearfix:after{
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    content: '';
+}
+.clearfix{
+    zoom:1;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #e73c31;
+}
+.frame{
+    width: 50%;
+    border: gray 1px solid;
+    height: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.frame .top{
+    line-height: 50px;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    color: white;
+    font-size: 26px;
+    font-weight: bolder;
+    background-color: red;
+}
+.list{
+    margin-top: 29px;
+    margin-left: 14px;
+    width: 100%;
+}
+.record , .new{
+    border: gray 0px solid;
+    box-shadow: 1px 1px 6px #888888;
+    width: 36%;
+    float: left;
+    margin-left: 42px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 25px 10px;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+}
+.new{
+    text-align: center;
+    line-height: 60px;
+}
+.card{
+    height: 60%;
+    width: 74%;
+    position: absolute;
+    top: 110px;
+    left: 88px;
+    margin: 0 auto;
+    background-color:white;
+}
+.card input{
+    width: 87%;
+    height: 24px;
+    border: 0px;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+.blank{
+    display: none;
+}
+.board{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.card .top .info{
+    width: 80%;
+    float: left;
+}
+.card .top .close{
+    width: 20%;
+    float: left;
+    background-color: #61403b;
+}
+.card .save{
+    margin-bottom:0px; 
+    
+}
+.save .button{
+    margin: 0 auto;
+    width: 86px;
+    height: 33px;
+    background-color: green;
+    color: white;
+    font-size: 19px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 33px;
+}
+.record .delete{
+    position: absolute;
+    left: 212px;
+    top: 8px;
+}
+
